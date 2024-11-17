@@ -1,6 +1,6 @@
 import React from "react";
 
-function menu() {
+const menu = () => {
   return (
     <div>
       <div
