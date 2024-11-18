@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 function About() {
   return (
     <div>
-            <div
+      <div
         id="about"
         className="parallax-window"
         data-parallax="scroll"
@@ -45,7 +45,7 @@ function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default About;

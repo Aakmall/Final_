@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Intro = () => {
   return (
@@ -79,7 +79,7 @@ const Intro = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Intro;

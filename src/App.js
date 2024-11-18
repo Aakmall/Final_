@@ -1,4 +1,7 @@
-import "./App.css";
+import Intro from "./Components/Intro/Intro.js";
+import Menu from "./Components/Menu/Menu.js";
+import About from "./Components/About/About.js";
+import "./App(import)";
 
 const App = () => {
   return (
