@@ -3,7 +3,7 @@ import React from 'react'
 const Intro = () => {
   return (
     <div>
-              <div
+      <div
         id="intro"
         className="parallax-window"
         data-parallax="scroll"
