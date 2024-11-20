@@ -1,6 +1,6 @@
 import React from "react";
 
-function Contact() {
+const Contact = () => {
   return (
     <div>
       <a
@@ -104,5 +104,5 @@ function Contact() {
       </div>
     </div>
   );
-}
+};
 export default Contact;
