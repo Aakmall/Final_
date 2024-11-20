@@ -70,10 +70,9 @@ const Intro = () => {
             </div>
             <div className="bg-black bg-opacity-70 p-10 mb-5">
               <p className="text-white leading-8 text-sm font-light">
-                This is a coffee shop template named Antique Cafe which is a
-                parallax HTML5 template with a good responsiveness. Feel free to
-                use this layout htmlFor your cafe. If you have any question,
-                please{" "}
+              Selamat datang di Antique Cafe, sebuah tempat di mana kenangan masa lampau berpadu dengan kenyamanan masa kini. Temukan suasana hangat yang dikelilingi oleh dekorasi vintage nan elegan, menghadirkan perjalanan ke era klasik yang penuh pesona.
+
+Nikmati secangkir kopi istimewa yang diracik dari biji kopi pilihan{" "}
                 <a
                   rel="nofollow"
                   href="https://www.tooplate.com/contact"
