@@ -8,11 +8,10 @@ import Contact from "./Components/Contact/Contact.js";
 import "./App.css";
 
 const App = () => {
-  
   useEffect(() => {
     AOS.init({
-      duration: 2000, 
-      once: true, 
+      duration: 2000,
+      once: true,
     });
   }, []);
 
