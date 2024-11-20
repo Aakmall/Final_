@@ -1,15 +1,9 @@
 import React from "react";
-import bgImage from "D:\react\final_projectsrcComponentsContactantique-cafe-bg-04.jpg";
 
 const Contact = () => {
   return (
     <div>
-      <div
-        id="contact"
-        className="Contact"
-        data-parallax="scroll"
-        data-image-src={bgImage}
-      >
+      <div id="contact" className="Contact" data-parallax="scroll">
         <div className="container mx-auto tm-container pt-24 pb-48 sm:py-48">
           <div className="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
             <div className="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
