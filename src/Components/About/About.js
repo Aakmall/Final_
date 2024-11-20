@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
 
 const About = () => {
+  const [about, setAbout] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const introRef = ref(db, "about");
+    onValue(introRef, (snapshot) => {
+      const data = snapshot.val();
+      setAbout(data);
+    });
+  }, []);
+
   return (
     <div>
       <div id="about" className="About" data-parallax="scroll">
@@ -10,14 +21,7 @@ const About = () => {
               <h2 className="mb-6 tm-text-green text-4xl font-medium">
                 Tentang kafe kami
               </h2>
-              <p className="mb-6 text-base leading-8">
-                Kafe kami adalah tempat yang hangat dan nyaman untuk menikmati
-                hidangan lezat dan kopi berkualitas. Dengan bahan-bahan lokal
-                terbaik, setiap sajian dibuat dengan cinta dan perhatian. Baik
-                untuk berkumpul, bekerja, atau bersantai, kami siap menyambut
-                Anda dan menciptakan momen berharga bersama. ☕ Nikmati rasa,
-                ciptakan kenangan.
-              </p>
+              <p className="mb-6 text-base leading-8">{about.about1}</p>
             </div>
             <a
               href="#contact"
