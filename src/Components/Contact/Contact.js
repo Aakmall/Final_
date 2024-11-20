@@ -1,36 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
 
 const Contact = () => {
+  const [contact, setContact] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const contactRef = ref(db, "contact");
+    onValue(contactRef, (snapshot) => {
+      const data = snapshot.val();
+      setContact(data);
+    });
+  }, []);
   return (
     <div>
       <div id="contact" className="Contact" data-parallax="scroll">
         <div className="container mx-auto tm-container pt-24 pb-48 sm:py-48">
           <div className="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
             <div className="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
-              <h2 className="text-3xl mb-6 tm-text-green">Contact Us</h2>
-              <p className="mb-6 text-lg leading-8">
-                Hubungi Kami, Kami senang mendengar dari Anda! Apakah Anda
-                memiliki pertanyaan, ingin bekerja sama, atau hanya ingin
-                menyapa? Jangan ragu untuk menghubungi kami. Mari bersama-sama
-                menciptakan sesuatu yang luar biasa!
-              </p>
+              <h2 className="text-3xl mb-6 tm-text-green">
+                {contact.contact1}
+              </h2>
+              <p className="mb-6 text-lg leading-8">{contact.contact2}</p>
               <p className="mb-10 text-lg">
                 <span className="block mb-2">
-                  Tel:{" "}
+                  {contact.contact3}{" "}
                   <a
                     href="tel:0100200340"
                     className="hover:text-yellow-600 transition"
                   >
-                    +62-8953-4005-3177
+                    {contact.contact4}
                   </a>
                 </span>
                 <span className="block">
-                  Email:{" "}
+                  {contact.contact5}{" "}
                   <a
                     href="mailto:info@company.com"
                     className="hover:text-yellow-600 transition"
                   >
-                    Wensysompa86@gmail.com
+                    {contact.contact6}
                   </a>
                 </span>
               </p>
@@ -40,7 +47,7 @@ const Contact = () => {
                   className="inline-block text-white text-2xl pl-10 pr-12 py-6 rounded-lg transition tm-bg-green"
                 >
                   <i className="fas fa-map-marked-alt mr-8" />
-                  Open Maps
+                  {contact.contact7}
                 </a>
               </div>
             </div>
@@ -50,7 +57,7 @@ const Contact = () => {
                   type="text"
                   name="name"
                   className="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
-                  placeholder="Name"
+                  placeholder="{Name}"
                   required
                 />
                 <input
@@ -73,7 +80,7 @@ const Contact = () => {
                     type="submit"
                     className="text-white hover:text-yellow-500 transition"
                   >
-                    Send it
+                    {contact.contact8}
                   </button>
                 </div>
               </form>
