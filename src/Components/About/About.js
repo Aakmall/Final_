@@ -11,34 +11,12 @@ const About = () => {
                 Tentang kafe kami
               </h2>
               <p className="mb-6 text-base leading-8">
-                Selamat datang di kafe kami, sebuah tempat yang hangat dan
-                nyaman di mana setiap momen dirancang dengan cinta dan
-                perhatian. Kami percaya bahwa kafe ini bukan sekadar tempat
-                untuk menikmati makanan dan minuman lezat, tetapi juga untuk
-                membangun hubungan, menginspirasi kreativitas, dan memberikan
-                Anda ruang untuk bersantai dan mengisi energi. Menu kami dibuat
-                dengan penuh perhatian, memadukan bahan-bahan lokal berkualitas
-                dengan cita rasa yang menggugah selera. Mulai dari kopi yang
-                diseduh dengan sempurna, kue-kue yang menggoda, hingga hidangan
-                yang mengenyangkan, setiap sajian mencerminkan hasrat kami
-                terhadap kualitas. Apakah Anda datang untuk berkumpul bersama
-                teman, menemukan ide-ide baru, atau menikmati waktu sendirian,
-                kafe kami adalah rumah kedua Anda. Terima kasih telah meluangkan
-                waktu di sini – kami tidak sabar untuk menyambut Anda kembali!
-                ☕ Di sini, rasa bertemu kenyamanan, dan kenangan tercipta.
-              </p>
-              <p className="text-base leading-8">
-                If you wish to{" "}
-                <a
-                  rel="nofollow"
-                  href="https://www.tooplate.com/contact"
-                  target="_parent"
-                >
-                  support us
-                </a>
-                , please make a little donation via PayPal. That would be very
-                helpful. Another way is to tell your friends about Tooplate
-                website. Thank you.{" "}
+                Kafe kami adalah tempat yang hangat dan nyaman untuk menikmati
+                hidangan lezat dan kopi berkualitas. Dengan bahan-bahan lokal
+                terbaik, setiap sajian dibuat dengan cinta dan perhatian. Baik
+                untuk berkumpul, bekerja, atau bersantai, kami siap menyambut
+                Anda dan menciptakan momen berharga bersama. ☕ Nikmati rasa,
+                ciptakan kenangan.
               </p>
             </div>
             <a
