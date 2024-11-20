@@ -77,7 +77,11 @@ const Menu = () => {
                 </div>
               </div>
               <div className="flex items-start mb-6 tm-menu-item">
-                <img src="img/menu-item-4.jpg" alt="" className="rounded-md" />
+                <img
+                  src={`data:image/jpg;base64,${menu.image4}`}
+                  alt=""
+                  className="rounded-md"
+                />
                 <div className="ml-3 sm:ml-6">
                   <h3 className="text-lg sm:text-xl tm-text-yellow mb-1">
                     {menu.menu11}
@@ -104,7 +108,11 @@ const Menu = () => {
                     {menu.menu16}
                   </div>
                 </div>
-                <img src="img/menu-item-5.jpg" alt="" className="rounded-md" />
+                <img
+                  src={`data:image/jpg;base64,${menu.image5}`}
+                  alt=""
+                  className="rounded-md"
+                />
               </div>
               <div className="flex items-start justify-end mb-6 tm-menu-item-2">
                 <div className="text-right mr-6">
