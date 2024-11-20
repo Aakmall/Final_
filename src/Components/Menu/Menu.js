@@ -3,11 +3,7 @@ import React from "react";
 const menu = () => {
   return (
     <div>
-      <div
-        id="menu"
-        className="Menu"
-        data-parallax="scroll"
-      >
+      <div id="menu" className="Menu" data-parallax="scroll">
         <div className="container mx-auto tm-container py-24 sm:py-48">
           <div className="text-center mb-16">
             <h2 className="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">
@@ -23,10 +19,10 @@ const menu = () => {
                     Hot Cappuccino
                   </h3>
                   <div className="text-white text-md sm:text-lg font-light mb-1">
-                    S $8.50
+                    Large : Rp. 20.000,00
                   </div>
                   <div className="text-white text-md sm:text-lg font-light">
-                    L $10.50
+                    Small : Rp. 15.000,00
                   </div>
                 </div>
               </div>
@@ -37,10 +33,10 @@ const menu = () => {
                     Hot Americano
                   </h3>
                   <div className="text-white text-md sm:text-lg font-light mb-1">
-                    S $9.50 . BG #544639
+                    Small : Rp.15.000,00
                   </div>
                   <div className="text-white text-md sm:text-lg font-light">
-                    L $12.50
+                    Large : Rp.19.000,00
                   </div>
                 </div>
               </div>
@@ -48,13 +44,13 @@ const menu = () => {
                 <img src="img/menu-item-3.jpg" alt="" className="rounded-md" />
                 <div className="ml-3 sm:ml-6">
                   <h3 className="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">
-                    Hot Latte #FC6
+                    Hot Latte
                   </h3>
                   <div className="text-white text-md sm:text-lg font-light mb-1">
-                    M $11.75
+                    Medium : Rp.18.000,00
                   </div>
                   <div className="text-white text-md sm:text-lg font-light">
-                    L $14.75
+                    Large : Rp.23.000,00
                   </div>
                 </div>
               </div>
@@ -64,11 +60,11 @@ const menu = () => {
                   <h3 className="text-lg sm:text-xl tm-text-yellow mb-1">
                     Hot Espresso
                   </h3>
-                  <h3 className="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">
-                    Hot Chocolate
-                  </h3>
                   <div className="text-white text-md sm:text-lg font-light">
-                    Size M $11.75 . L $14.75
+                    Medium : Rp.18.000,00
+                  </div>
+                  <div className="text-white text-md sm:text-lg font-light">
+                    Large : Rp.23.000,00
                   </div>
                 </div>
               </div>
@@ -80,10 +76,10 @@ const menu = () => {
                     Iced Cappuccino
                   </h3>
                   <div className="text-white text-md sm:text-lg font-light mb-1">
-                    Small $10
+                    Small : Rp.15.000,00
                   </div>
                   <div className="text-white text-md sm:text-lg font-light">
-                    Large $15
+                    Large : Rp.24.000,00
                   </div>
                 </div>
                 <img src="img/menu-item-5.jpg" alt="" className="rounded-md" />
@@ -94,10 +90,10 @@ const menu = () => {
                     Iced Americano
                   </h3>
                   <div className="text-white text-md sm:text-lg font-light mb-1">
-                    Small $12.50
+                    Small : Rp.19.000,00
                   </div>
                   <div className="text-white text-md sm:text-lg font-light">
-                    Large $16.50
+                    Large Rp.26.000,00
                   </div>
                 </div>
                 <img src="img/menu-item-6.jpg" alt="" className="rounded-md" />
@@ -108,10 +104,10 @@ const menu = () => {
                     Iced Milky Latte
                   </h3>
                   <div className="text-white text-md sm:text-lg font-light mb-1">
-                    Small $14
+                    Small : Rp.22.000,00
                   </div>
                   <div className="text-white text-md sm:text-lg font-light">
-                    Large $18
+                    Large : Rp. 28.000,00
                   </div>
                 </div>
                 <img src="img/menu-item-7.jpg" alt="" className="rounded-md" />
@@ -125,7 +121,10 @@ const menu = () => {
                     Iced Mocha
                   </h3>
                   <div className="text-white text-md sm:text-lg font-light">
-                    Small $10 . Large $15
+                    Small :Rp.15.000,00
+                  </div>
+                  <div className="text-white text-md sm:text-lg font-light">
+                    Large : Rp. 23.000,00
                   </div>
                 </div>
                 <img src="img/menu-item-8.jpg" alt="" className="rounded-md" />
