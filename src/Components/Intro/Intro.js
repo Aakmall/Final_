@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
 
 const Intro = () => {
+  const [intro, setIntro] = useState({})
+  useEffect(() => {
+    const db = getDatabase();
+    const introRef = ref(db, "intro");
+    onValue(introRef, (snapshot) => {
+      const data = snapshot.val();
+      setIntro(data);
+    });
+  }, []);
   const scrollToSection = (id) => {
     const section = document.querySelector(id);
     if (section) {
@@ -62,19 +72,15 @@ const Intro = () => {
           <div className="sm:pb-60 sm:pt-48 py-20">
             <div className="bg-black bg-opacity-70 p-12 mb-5 text-center">
               <h1 className="text-white text-5xl tm-logo-font mb-5">
-                Antique Cafe
+                {intro.intro1}
               </h1>
               <p className="tm-text-gold tm-text-2xl">
-                your daily energy booster
+                {intro.intro2}
               </p>
             </div>
             <div className="bg-black bg-opacity-70 p-10 mb-5">
               <p className="text-white leading-8 text-sm font-light">
-                Selamat datang di Antique Cafe, sebuah tempat di mana kenangan
-                masa lampau berpadu dengan kenyamanan masa kini. Temukan suasana
-                hangat yang dikelilingi oleh dekorasi vintage nan elegan,
-                menghadirkan perjalanan ke era klasik yang penuh pesona. Nikmati
-                secangkir kopi istimewa yang diracik dari biji kopi pilihan .{" "}
+                {intro.intro3} .{" "}
               </p>
             </div>
             <div className="text-center">
@@ -84,7 +90,7 @@ const Intro = () => {
                   className="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition"
                 >
                   <i className="fas fa-coffee mr-3"></i>
-                  <span>Let's explore...</span>
+                  <span>{intro.intro4}</span>
                 </a>
               </div>
             </div>
