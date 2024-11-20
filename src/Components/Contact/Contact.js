@@ -4,16 +4,9 @@ import bgImage from "D:\react\final_projectsrcComponentsContactantique-cafe-bg-0
 const Contact = () => {
   return (
     <div>
-      <a
-        href="#contact"
-        className="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md"
-      >
-        <i className="far fa-comments mr-4" />
-        Contact
-      </a>
       <div
         id="contact"
-        className="parallax-window relative"
+        className="Contact"
         data-parallax="scroll"
         data-image-src={bgImage}
       >

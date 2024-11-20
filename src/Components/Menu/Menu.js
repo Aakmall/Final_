@@ -5,9 +5,8 @@ const menu = () => {
     <div>
       <div
         id="menu"
-        className="parallax-window"
+        className="Menu"
         data-parallax="scroll"
-        data--src="img/antique-cafe-bg-02.jpg"
       >
         <div className="container mx-auto tm-container py-24 sm:py-48">
           <div className="text-center mb-16">

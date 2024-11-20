@@ -5,9 +5,8 @@ const About = () => {
     <div>
       <div
         id="about"
-        className="parallax-window"
+        className="About"
         data-parallax="scroll"
-        data--src="img/antique-cafe-bg-03.jpg"
       >
         <div className="container mx-auto tm-container py-24 sm:py-48">
           <div className="tm-item-container sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4">

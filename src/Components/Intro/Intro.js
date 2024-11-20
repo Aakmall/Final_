@@ -1,43 +1,63 @@
 import React from "react";
 
 const Intro = () => {
+  const scrollToSection = (id) => {
+    const section = document.querySelector(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div>
-      <div
-        id="intro"
-        className="parallax-window"
-        data-parallax="scroll"
-        data--src="img/antique-cafe-bg-01.jpg"
-      >
-        <nav id="tm-nav" className="fixed w-full">
+      <div id="intro" className="Intro" data-parallax="scroll">
+        {/* Navbar */}
+        <nav
+          id="tm-nav"
+          className="sticky top-0 bg-black bg-opacity-80 z-50 shadow-md"
+        >
           <div className="tm-container mx-auto px-2 md:py-6 text-right">
             <button className="md:hidden py-2 px-2" id="menu-toggle">
-              <i class="fas fa-2x fa-bars tm-text-gold"></i>
+              <i className="fas fa-2x fa-bars tm-text-gold"></i>
             </button>
             <ul className="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
               <li className="inline-block mb-4 mx-4">
-                <a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">
+                <button
+                  onClick={() => scrollToSection("#intro")}
+                  className="tm-text-gold py-1 md:py-3 px-4"
+                >
                   Intro
-                </a>
+                </button>
               </li>
               <li className="inline-block mb-4 mx-4">
-                <a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">
+                <button
+                  onClick={() => scrollToSection("#menu")}
+                  className="tm-text-gold py-1 md:py-3 px-4"
+                >
                   Menu
-                </a>
+                </button>
               </li>
               <li className="inline-block mb-4 mx-4">
-                <a href="#about" class="tm-text-gold py-1 md:py-3 px-4">
+                <button
+                  onClick={() => scrollToSection("#about")}
+                  className="tm-text-gold py-1 md:py-3 px-4"
+                >
                   About
-                </a>
+                </button>
               </li>
               <li className="inline-block mb-4 mx-4">
-                <a href="#contact" class="tm-text-gold py-1 md:py-3 px-4">
+                <button
+                  onClick={() => scrollToSection("#contact")}
+                  className="tm-text-gold py-1 md:py-3 px-4"
+                >
                   Contact
-                </a>
+                </button>
               </li>
             </ul>
           </div>
         </nav>
+
+        {/* Intro Content */}
         <div className="container mx-auto px-2 tm-intro-width">
           <div className="sm:pb-60 sm:pt-48 py-20">
             <div className="bg-black bg-opacity-70 p-12 mb-5 text-center">
