@@ -8,22 +8,24 @@ const About = () => {
           <div className="tm-item-container sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4">
             <div className="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
               <h2 className="mb-6 tm-text-green text-4xl font-medium">
-                About our cafe
+                Tentang kafe kami
               </h2>
               <p className="mb-6 text-base leading-8">
-                Welcome to our café, a cozy and inviting space where every
-                moment is crafted with love and care. We believe in creating
-                more than just delicious food and drinks – we’re here to build
-                connections, inspire creativity, and offer you a place to relax
-                and recharge. Our menu is thoughtfully curated, blending rich,
-                locally sourced ingredients with flavors that excite your taste
-                buds. From perfectly brewed coffee to mouthwatering pastries and
-                hearty meals, every bite and sip reflects our passion for
-                quality. Whether you're here to catch up with friends, spark new
-                ideas, or enjoy a quiet moment alone, our café is your home away
-                from home. Thank you for sharing your time with us – we can’t
-                wait to serve you again soon! ☕ Where flavors meet comfort, and
-                memories are made.
+                Selamat datang di kafe kami, sebuah tempat yang hangat dan
+                nyaman di mana setiap momen dirancang dengan cinta dan
+                perhatian. Kami percaya bahwa kafe ini bukan sekadar tempat
+                untuk menikmati makanan dan minuman lezat, tetapi juga untuk
+                membangun hubungan, menginspirasi kreativitas, dan memberikan
+                Anda ruang untuk bersantai dan mengisi energi. Menu kami dibuat
+                dengan penuh perhatian, memadukan bahan-bahan lokal berkualitas
+                dengan cita rasa yang menggugah selera. Mulai dari kopi yang
+                diseduh dengan sempurna, kue-kue yang menggoda, hingga hidangan
+                yang mengenyangkan, setiap sajian mencerminkan hasrat kami
+                terhadap kualitas. Apakah Anda datang untuk berkumpul bersama
+                teman, menemukan ide-ide baru, atau menikmati waktu sendirian,
+                kafe kami adalah rumah kedua Anda. Terima kasih telah meluangkan
+                waktu di sini – kami tidak sabar untuk menyambut Anda kembali!
+                ☕ Di sini, rasa bertemu kenyamanan, dan kenangan tercipta.
               </p>
               <p className="text-base leading-8">
                 If you wish to{" "}
