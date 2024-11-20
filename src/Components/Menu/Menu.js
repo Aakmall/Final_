@@ -23,7 +23,11 @@ const Menu = () => {
           <div className="flex flex-col lg:flex-row justify-around items-center">
             <div className="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
               <div className="flex items-start mb-6 tm-menu-item">
-                <img src="img/menu-item-1.jpg" alt="" className="rounded-md" />
+                <img
+                  src={`data:image/jpg;base64,${menu.image1}`}
+                  alt=""
+                  className="rounded-md"
+                />
                 <div className="ml-3 sm:ml-6">
                   <h3 className="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">
                     {menu.menu2}
@@ -37,7 +41,11 @@ const Menu = () => {
                 </div>
               </div>
               <div className="flex items-start mb-6 tm-menu-item">
-                <img src="img/menu-item-2.jpg" alt="" className="rounded-md" />
+                <img
+                  src={`data:image/jpg;base64,${menu.image2}`}
+                  alt=""
+                  className="rounded-md"
+                />
                 <div className="ml-3 sm:ml-6">
                   <h3 className="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">
                     {menu.menu5}
