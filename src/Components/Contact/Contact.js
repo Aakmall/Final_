@@ -1,4 +1,5 @@
 import React from "react";
+import bgImage from "D:\react\final_projectsrcComponentsContactantique-cafe-bg-04.jpg";
 
 const Contact = () => {
   return (
@@ -14,7 +15,7 @@ const Contact = () => {
         id="contact"
         className="parallax-window relative"
         data-parallax="scroll"
-        data-image-src="img/antique-cafe-bg-04.jpg"
+        data-image-src={bgImage}
       >
         <div className="container mx-auto tm-container pt-24 pb-48 sm:py-48">
           <div className="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
