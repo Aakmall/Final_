@@ -126,7 +126,11 @@ const Menu = () => {
                     {menu.menu19}
                   </div>
                 </div>
-                <img src="img/menu-item-6.jpg" alt="" className="rounded-md" />
+                <img
+                  src={`data:image/jpg;base64,${menu.image6}`}
+                  alt=""
+                  className="rounded-md"
+                />
               </div>
               <div className="flex items-start justify-end mb-6 tm-menu-item-2">
                 <div className="text-right mr-6">
@@ -140,7 +144,11 @@ const Menu = () => {
                     {menu.menu22}
                   </div>
                 </div>
-                <img src="img/menu-item-7.jpg" alt="" className="rounded-md" />
+                <img
+                  src={`data:image/jpg;base64,${menu.image7}`}
+                  alt=""
+                  className="rounded-md"
+                />
               </div>
               <div className="flex items-start justify-end mb-6 tm-menu-item-2">
                 <div className="text-right mr-6">
@@ -154,7 +162,11 @@ const Menu = () => {
                     {menu.menu25}
                   </div>
                 </div>
-                <img src="img/menu-item-8.jpg" alt="" className="rounded-md" />
+                <img
+                  src={`data:image/jpg;base64,${menu.image8}`}
+                  alt=""
+                  className="rounded-md"
+                />
               </div>
             </div>
           </div>
