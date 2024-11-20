@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getDatabase, ref, onValue } from "firebase/database";
 
-const menu = () => {
+const Menu = () => {
   const [menu, setMenu] = useState({});
   useEffect(() => {
     const db = getDatabase();
@@ -144,4 +144,4 @@ const menu = () => {
   );
 };
 
-export default menu;
+export default Menu;
