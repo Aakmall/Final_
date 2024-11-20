@@ -9,8 +9,10 @@ const Contact = () => {
             <div className="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
               <h2 className="text-3xl mb-6 tm-text-green">Contact Us</h2>
               <p className="mb-6 text-lg leading-8">
-                Praesent tellus magna, consectetur sit amet volutpat eu,
-                pulvinar vitae sem. Sed ultrices. bg white 80% alpha. btn #066
+                Hubungi Kami, Kami senang mendengar dari Anda! Apakah Anda
+                memiliki pertanyaan, ingin bekerja sama, atau hanya ingin
+                menyapa? Jangan ragu untuk menghubungi kami. Mari bersama-sama
+                menciptakan sesuatu yang luar biasa!
               </p>
               <p className="mb-10 text-lg">
                 <span className="block mb-2">
@@ -19,7 +21,7 @@ const Contact = () => {
                     href="tel:0100200340"
                     className="hover:text-yellow-600 transition"
                   >
-                    010-020-0340
+                    +62-8953-4005-3177
                   </a>
                 </span>
                 <span className="block">
@@ -28,7 +30,7 @@ const Contact = () => {
                     href="mailto:info@company.com"
                     className="hover:text-yellow-600 transition"
                   >
-                    info@company.com
+                    Wensysompa86@gmail.com
                   </a>
                 </span>
               </p>
