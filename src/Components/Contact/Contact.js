@@ -3,18 +3,10 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <a
-        href="#contact"
-        className="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md"
-      >
-        <i className="far fa-comments mr-4" />
-        Contact
-      </a>
       <div
         id="contact"
-        className="parallax-window relative"
+        className="Contact"
         data-parallax="scroll"
-        data-image-src="img/antique-cafe-bg-04.jpg"
       >
         <div className="container mx-auto tm-container pt-24 pb-48 sm:py-48">
           <div className="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
